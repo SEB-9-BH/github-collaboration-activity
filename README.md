@@ -52,6 +52,43 @@ Branches are parallel lanes on a highway…you and your partner build in separat
 
 ---
 
+# Review
+
+### Git Refresher
+So far, you have been using git to get code (pull) from a remote repository (on github), writing your own code, tracking it with git, and moving (push) the code from your computer (local version) to github.
+
+When using git locally (on your computer), you have been running the commands in Terminal (Command line).
+
+A git command has a minimum of 1 argument.
+
+Git commands are always executed by first typing `git`
+
+The first argument is the command (or verb), like
+- `git init` (initialize a new git repository)
+- `git push` (send the code to a remote location)
+
+The second(+) argument gives the first argument context (when needed)
+- `git add .` (add all files in this directory)
+- `git pull origin main` (get all files from the url that has an alias of `origin`, from the branch `main`)
+
+Lastly, flags can be added
+- `git remote -v` (git show remote(s) and be verbose(give more detail))
+
+Here is a table of our commonly used git commands that we've used in this course so far:
+
+| git | Argument | Flag(s)/Additional arguments | Description |
+|:---:|:-----------:|:-------:|:-----------:|
+| git | init |  |  Initializes a new repository|
+| git | add | `.` or filename | Takes untracked files and adds them to the staging area so that they can be committed   |
+| git | commit | -m 'some message'  |  Takes a snapshot of files in the staging area/ saves this version of them as a commit|
+| git | remote | -v |  Shows the remote repositories associated with the local repository. Most repositories have an alias for their urls like `origin` or `upstream`|
+| git | pull | upstream main |  Gets files from a url with an alias of `upstream` from its branch `main`|
+| git | push | origin dev |  Sends files to a url with an alias of `origin` to its branch `dev`|
+| git | log| --oneline |  Shows a log of commits of a repo (--oneline shows a truncated message)_`q` to exit_|
+| git | status |  |  Shows the state of files in a repo (untracked, modified, staged)|
+
+![git workflow from git about page](https://i.imgur.com/MXiZRI0.png)
+
 ## Lesson…Git Basics in 10 Steps
 
 1. **Identify yourself locally**
